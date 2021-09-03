@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Maxeemja/todo-app/static/css/main.2e46ab23.chunk.css",
+    "main.js": "/Maxeemja/todo-app/static/js/main.bc4b4483.chunk.js",
+    "main.js.map": "/Maxeemja/todo-app/static/js/main.bc4b4483.chunk.js.map",
+    "runtime-main.js": "/Maxeemja/todo-app/static/js/runtime-main.96a36f5b.js",
+    "runtime-main.js.map": "/Maxeemja/todo-app/static/js/runtime-main.96a36f5b.js.map",
+    "static/css/2.d5e620ed.chunk.css": "/Maxeemja/todo-app/static/css/2.d5e620ed.chunk.css",
+    "static/js/2.cc03ff5c.chunk.js": "/Maxeemja/todo-app/static/js/2.cc03ff5c.chunk.js",
+    "static/js/2.cc03ff5c.chunk.js.map": "/Maxeemja/todo-app/static/js/2.cc03ff5c.chunk.js.map",
+    "index.html": "/Maxeemja/todo-app/index.html",
+    "static/css/2.d5e620ed.chunk.css.map": "/Maxeemja/todo-app/static/css/2.d5e620ed.chunk.css.map",
+    "static/css/main.2e46ab23.chunk.css.map": "/Maxeemja/todo-app/static/css/main.2e46ab23.chunk.css.map",
+    "static/js/2.cc03ff5c.chunk.js.LICENSE.txt": "/Maxeemja/todo-app/static/js/2.cc03ff5c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96a36f5b.js",
+    "static/css/2.d5e620ed.chunk.css",
+    "static/js/2.cc03ff5c.chunk.js",
+    "static/css/main.2e46ab23.chunk.css",
+    "static/js/main.bc4b4483.chunk.js"
+  ]
+}
