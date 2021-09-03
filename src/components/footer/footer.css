@@ -1,0 +1,11 @@
+
+footer{
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    top: calc(100% - 50px);
+    left: calc(50% - 150px);
+}

@@ -19,8 +19,8 @@ const Header = styled.div`
 const AppHeader = ({liked, allPosts}) =>{
     return (
         <Header>
-            <h1>Maxeemjaa</h1>
-            <h2>{allPosts} записей, из них понравилось {liked}</h2>
+            <h1>Simple ToDo App</h1>
+            <h2>{allPosts} tasks, liked {liked}</h2>
         </Header>
     )
 }

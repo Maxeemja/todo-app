@@ -9,7 +9,7 @@ export default class PostAddForm extends Component {
         }
         this.onValueChange = this.onValueChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
-        const formm = document.querySelector('form');
+    
     }
     
     
@@ -42,7 +42,7 @@ export default class PostAddForm extends Component {
                 onSubmit={this.onSubmit}>
                 <input 
                     type="text"
-                    placeholder="О чём вы думаете сейчас?"
+                    placeholder="Write a task"
                     className="form-control new-post-label"
                     onChange={this.onValueChange}
                     value={this.state.text}
@@ -51,7 +51,7 @@ export default class PostAddForm extends Component {
                     type="submit" 
                     className="btn btn-outline-secondary"
                     >
-                    Добавить
+                    Add
                 </button>
             </form>
         )

@@ -5,9 +5,9 @@ export default class PostStatusFilter extends Component {
     constructor(props){
         super(props);
         this.buttons = [
-            {name: 'all', label: 'Все'},
-            {name: 'active', label: 'Активные'},
-            {name: 'completed', label: 'Завершенные'}
+            {name: 'all', label: 'All'},
+            {name: 'active', label: 'Active'},
+            {name: 'completed', label: 'Completed'}
         ]
     }
 

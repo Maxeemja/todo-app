@@ -5,6 +5,7 @@ import PostStatusFilter from '../post-status-filter/post-status-filter';
 import PostList from '../post-list/post-list';
 import PostAddForm from '../post-add-form/post-add-form';
 import DeleteAllButton from '../delete-all-btn/delete-all-btn';
+import Footer from '../footer/footer';
 import styled from 'styled-components';
 
 
@@ -13,6 +14,7 @@ import '../post-list/post-list.css'
 import '../post-list-item/post-list-item.css'
 import '../delete-all-btn/delete-all-btn.css'
 import '../search-panel/search-panel.css'
+import '../footer/footer.css'
 
 const AppBlock = styled.div`
     margin: 0 auto;
@@ -37,6 +39,7 @@ export default class App extends React.Component{
         this.onToggleLiked = this.onToggleLiked.bind(this);
         this.onUpdateSearch = this.onUpdateSearch.bind(this);
         this.onFilterSelect = this.onFilterSelect.bind(this);
+        this.deleteAll = this.deleteAll.bind(this);
         this.maxId = 4;
        
     }
@@ -51,6 +54,16 @@ export default class App extends React.Component{
             return {
                 data: newArr
             }
+        })
+    }
+
+    deleteAll(){
+        this.setState(({data})=>{
+            data.forEach((e)=>{
+                if(e.completed){
+                    this.deleteItem(e.id)
+                }
+            })
         })
     }
 
@@ -153,10 +166,13 @@ export default class App extends React.Component{
                     onToggleLiked={this.onToggleLiked}
                     
                 />
-                <button className='btn-danger'>Delete All</button>
+                <DeleteAllButton
+                    filterState={this.state.filter}
+                    deleteAll={this.deleteAll}/>
                 <PostAddForm
                     onAdd={this.addItem}
                     filterState={this.state.filter}/>
+                <Footer/>
             </AppBlock>
         );
     }

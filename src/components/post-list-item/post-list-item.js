@@ -5,23 +5,7 @@ export default class PostListItem extends Component {
 
 
     render(){
-        const {label, onDelete, onToggleCompleted, onToggleLiked, completed, like, filterState} = this.props;
-        
-        
-        const btntrash = document.querySelectorAll('.btn-trash');
-        /* switch(filterState){
-            
-            case 'completed': 
-                btntrash.forEach((e)=>{
-                    e.style.display = 'block';
-                })
-                break;
-            default:
-                
-                btntrash.forEach((e)=>{
-                    e.style.display = 'none';
-                })      
-        } */
+        const {label, onDelete, onToggleCompleted, onToggleLiked, completed, like} = this.props;
 
 
         let classNames = 'app-list-item d-flex justify-content-between';
